@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade - Guilherme Fornaziel Noal</title>
+  <style>
+    #menu{ /* Menu fixo no topo */
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90px;
+        background-color: rgb(35, 30, 50);
+        align-items: center;
+    }
+    #conteudo{ /* padding pro conteúdo do site não ficar grudado nas bordas */
+        padding-left: 90px;
+        padding-right: 90px;
+        padding-bottom: 50px;
+    }
+    #sm{ /* Sessão Sobre mim */
+        display: flex;
+        justify-content: space-around;
+        padding-top: 90px;
+        margin-bottom: 10px;
+    }
+    #form{ /* Sessão Formação */
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        background-color: rgb(237, 237, 237);
+        border-radius: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #port{ /* Sessão Portfólio */
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #cont{ /* Sessão Contato */
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        background-color: rgb(237, 237, 237);
+        border-radius: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #div-img{ /* Divs das imagens */
+        display:grid;
+        width: 45%;
+        align-items: center;
+    }
+    #divs{ /* Divs dos textos, botões e formulários */
+        width: 45%;
+        text-align: center;
+    }
+    #ul{ /* Lista do Menu */
+        list-style: none;
+        display: flex;
+    }
+    #ancora1, #ancora2, #ancora3, #ancora4 { /* Gambiarra para quando clicar no link do menu, ele não ficar por cima do conteúdo */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: 0;
+    margin-top: -90px; /* Mesma altura do menu */
+    background-color: transparent;
+    z-index: -1;
+}
+    li{
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+    h1{
+        font-size: 40px;
+        text-align: center;
+        justify-content: center;
+    }
+    p{
+        font-size: 20px;
+    }
+    img{
+        align-items: center;
+        border-radius: 30px;
+        width: 100%;
+    }
+    form{
+        display: grid;
+    }
+  </style>
+</head>
+<body>
+    <div id="menu">
+        <ul id="ul"> <!-- Menu -->
+            <li><a href="#ancora1">Sobre mim</a></li>
+            <li><a href="#ancora2">Formação</a></li>
+            <li><a href="#ancora3">Portfólio</a></li>
+            <li><a href="#ancora4">Contato</a></li>
+        </ul>
+    </div>
+    <div id="conteudo">
+        <div id="ancora1"></div>
+        <section id="sm"> <!-- Sessão Sobre mim -->
+            <div id="divs"> <!-- Conteúdo -->
+                <h1>Sobre mim</h1>
+                <p>Meu nome é Guilherme Fornaziel Noal e tenho 21 anos. Moro com muitas pessoas, incluindo minha esposa e minha filha.
+                    <br>
+                    <br>
+                    Gosto de estudar sobre certos temas como física, astro-física, economia, matemática, empreendedorismo, finanças, investimentos.
+                    <br>
+                    <br>
+                    O meu maior sonho é resolver um dos problemas do milênio! Mais especificamente o problema de Navier Stokes, considerado um dos maiores problemas da física! De toda a física clássica, esse é praticamente o único problema não resolvido.
+                    <br>
+                    <br>
+                    Além dessas coisas, eu adoro passar tempo com a minha família, jogar no computador e assistir animes e séries com a minha esposa.
+                    <br>
+                    <br>
+                    Aprecio muito os livros que trazem rico conhecimento. Gosto particularmente de ler sobre empreendedorismo, finanças pessoais e também sobre relações humanas (já que não sou muito bom nisso).
+                </p>
+            </div>
+            <div id="div-img"> <!-- Imagem -->
+                <img src="images/img1.jpg" alt="">
+            </div>
+        </section>
+        <div id="ancora2"></div>
+        <section id="form"> <!-- Sessão Formação -->
+            <div id="div-img"> <!-- Imagem -->
+                <img src="images/img2.jpg" alt="">
+            </div>
+            <div id="divs"> <!-- Conteúdo -->
+                <h1>Formação</h1>
+                <ul id="ul-form">
+                    <li>Bacharel: Engenharia civíl - Universidade Positivo | incompleto</li>
+                    <li>Tecnólogo: Análise e desenvolvimento de sistemas - Uninter | cursando</li>
+                </ul>
+            </div>
+        </section>
+        <div id="ancora3"></div>
+        <section id="port"> <!-- Sessão Portfólio -->
+            <div id="divs"> <!-- Conteúdo -->
+                <h1>Portfólio</h1>
+                <p>
+                    Clique no botão abaixo para ver a atividade da matéria "Design de interação":
+                </p>
+                <a id="a-port" target="_blank" href="https://www.figma.com/proto/m4jdMfDC2YHpAIVk28Mn12/Guilherme-Fornaziel-Noal-RU%3A-2642951?type=design&node-id=201-3&t=Rv6ML3PdcS3ePGWg-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=201%3A3"><button>Clique aqui</button></a>
+            </div>
+            <div id="div-img"> <!-- Imagem -->
+                <img src="images/img3.jpg" alt="">
+            </div>
+        </section>
+        <div id="ancora4"></div>
+        <section id="cont"> <!-- Sessão Contato -->
+            <div id="div-img"> <!-- Imagem -->
+                <img src="images/img4.jpg" alt="">
+            </div>
+            <div id="divs"> <!-- Formulário de contato -->
+                <h1>Contato</h1>
+                <form action="" method="POST">
+                    <p>Nome:</p>
+                    <input type="text" name="nome" required>
+                    <p>E-mail:</p>
+                    <input type="email" name="e-mail" required>
+                    <p>Seu texto:</p>
+                    <textarea name="texto" id="" cols="30" rows="10">Digite seu texto aqui...</textarea>
+                    <button type="submit">Enviar</button>
+               </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
